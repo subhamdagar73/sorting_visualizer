@@ -4,7 +4,7 @@ An interactive, educational sorting algorithm visualizer built with HTML, CSS, a
 
 🚀 Live Demo
 Check it out here:
-https://subhamdagar73.github.io/sorting_visualizer/
+[https://subhamdagar73.github.io/sorting_visualizer/](https://sorting-visualizer-lac-delta.vercel.app/)
 
 🛠️ Features
 Interactive Animations
