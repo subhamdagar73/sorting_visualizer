@@ -8,6 +8,11 @@ function Quick()
     //Setting Space complexity
     document.getElementById("Space_Worst").innerText="O(log N)";
 
+    if(array_size<=1) {
+        enable_buttons();
+        return;
+    }
+
     c_delay=0;
 
     quick_sort(0,array_size-1);
@@ -54,7 +59,7 @@ function quick_partition (start, end)
     div_update(divs[start],div_sizes[start],"red");//Height update
     div_update(divs[i-1],div_sizes[i-1],"red");//Height update
 
-    for(var t=start;t<=i;t++)
+    for(var t=start;t<i;t++)
     {
         div_update(divs[t],div_sizes[t],"green");//Color update
     }

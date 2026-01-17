@@ -8,6 +8,11 @@ function Merge()
     //Setting Space complexity
     document.getElementById("Space_Worst").innerText="O(N)";
 
+    if(array_size<=1) {
+        enable_buttons();
+        return;
+    }
+
     c_delay=0;
 
     merge_partition(0,array_size-1);

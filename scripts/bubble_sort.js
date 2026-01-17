@@ -8,6 +8,11 @@ function Bubble()
     //Setting Space complexity
     document.getElementById("Space_Worst").innerText="O(1)";
 
+    if(array_size<=1) {
+        enable_buttons();
+        return;
+    }
+
     c_delay=0;
 
     for(var i=0;i<array_size-1;i++)
@@ -28,7 +33,7 @@ function Bubble()
                 div_update(divs[j],div_sizes[j], "red");//Height update
                 div_update(divs[j+1],div_sizes[j+1], "red");//Height update
             }
-            div_update(divs[j],div_sizes[j], "blue");//Color updat
+            div_update(divs[j],div_sizes[j], "blue");//Color update
         }
         div_update(divs[j],div_sizes[j], "green");//Color update
     }

@@ -8,6 +8,11 @@ function Heap()
     //Setting Space complexity
     document.getElementById("Space_Worst").innerText="O(1)";
 
+    if(array_size<=1) {
+        enable_buttons();
+        return;
+    }
+
     c_delay=0;
 
     heap_sort();
@@ -87,5 +92,5 @@ function heap_sort()
         div_update(divs[i],div_sizes[i],"blue");//Color update
         div_update(divs[i],div_sizes[i],"green");//Color update
     }
-    div_update(divs[i],div_sizes[i],"green");//Color update
+    div_update(divs[0],div_sizes[0],"green");//Color update
 }

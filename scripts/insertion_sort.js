@@ -8,6 +8,11 @@ function Insertion()
     //Setting Space complexity
     document.getElementById("Space_Worst").innerText="O(1)";
 
+    if(array_size<=1) {
+        enable_buttons();
+        return;
+    }
+
     c_delay=0;
 
     for(var j=0;j<array_size;j++)

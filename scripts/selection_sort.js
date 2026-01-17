@@ -8,13 +8,18 @@ function Selection_sort()
     //Setting Space complexity
     document.getElementById("Space_Worst").innerText="O(1)";
 
+    if(array_size<=1) {
+        enable_buttons();
+        return;
+    }
+
     c_delay=0;
 
     for(var i=0;i<array_size-1;i++)
     {
         div_update(divs[i],div_sizes[i],"red");//Color update
 
-        index_min=i;
+        var index_min=i;
 
         for(var j=i+1;j<array_size;j++)
         {
